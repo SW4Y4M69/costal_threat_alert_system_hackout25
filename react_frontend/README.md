@@ -1,0 +1,1 @@
+React frontend scaffold. Run npm install && npm start.

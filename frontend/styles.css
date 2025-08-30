@@ -1,0 +1,107 @@
+/*
+body { background: linear-gradient(180deg,#f8fafc,#eaf2ff); }
+.card { border-radius: 12px; }
+#reading div { font-size: 0.95rem; line-height: 1.5; }
+.alert-pill { padding: 8px; border-radius: 8px; margin-bottom:8px; }
+.alert-high { background: rgba(255, 69, 58, 0.12); border-left: 5px solid #ff453a; }
+.alert-med { background: rgba(255, 159, 10, 0.08); border-left: 5px solid #ff9f0a; }
+.alert-low { background: rgba(48, 209, 88, 0.08); border-left: 5px solid #30d158; }
+
+body {
+  background: #f8f9fa;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+*/
+/* Body & Background */
+body {
+  background: linear-gradient(180deg, #f8fafc, #eaf2ff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Live reading styling */
+#reading div {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+/* Alerts feed pills */
+.alert-pill {
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: background 0.2s ease;
+  font-size: 0.9rem;
+}
+
+/* Severity Colors */
+.alert-high {
+  background: rgba(255, 69, 58, 0.12);
+  border-left: 5px solid #ff453a;
+}
+.alert-med {
+  background: rgba(255, 159, 10, 0.08);
+  border-left: 5px solid #ff9f0a;
+}
+.alert-low {
+  background: rgba(48, 209, 88, 0.08);
+  border-left: 5px solid #30d158;
+}
+
+/* Buttons spacing */
+button {
+  cursor: pointer;
+}
+
+/* Alerts feed scroll */
+#alertsFeed {
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+/* Chart canvas padding */
+#chart {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+/* Map card */
+#map {
+  border-radius: 12px;
+}
+
+/* Footer */
+footer {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-top: 2rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  #map {
+    height: 250px;
+  }
+}
